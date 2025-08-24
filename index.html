@@ -20,6 +20,7 @@
             margin-top: 64px;
             position: relative;
         }
+
         .footer-container {
             max-width: 1200px;
             margin: 0 auto;
@@ -30,11 +31,13 @@
             align-items: center;
             gap: 32px;
         }
+
         .footer-brand {
             display: flex;
             align-items: center;
             gap: 14px;
         }
+
         .footer-brand span:first-child {
             font-family: 'Nata Sans', sans-serif;
             font-size: 32px;
@@ -46,16 +49,19 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
+
         .footer-brand span:last-child {
             font-size: 16px;
             color: var(--text-muted);
             font-weight: 600;
         }
+
         .footer-links {
             display: flex;
             gap: 28px;
             flex-wrap: wrap;
         }
+
         .footer-links a {
             color: var(--text-secondary);
             text-decoration: none;
@@ -64,6 +70,7 @@
             position: relative;
             transition: color 0.2s;
         }
+
         .footer-links a::after {
             content: '';
             display: block;
@@ -76,16 +83,20 @@
             bottom: -4px;
             border-radius: 2px;
         }
+
         .footer-links a:hover {
             color: var(--accent-primary);
         }
+
         .footer-links a:hover::after {
             width: 100%;
         }
+
         .footer-social {
             display: flex;
             gap: 18px;
         }
+
         .footer-social a {
             color: var(--accent-primary);
             font-size: 24px;
@@ -99,12 +110,14 @@
             box-shadow: 0 2px 8px var(--shadow-color);
             transition: background 0.2s, color 0.2s, transform 0.2s;
         }
+
         .footer-social a:hover {
             background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
             color: #fff;
             transform: translateY(-4px) scale(1.08);
             box-shadow: 0 8px 24px var(--accent-primary);
         }
+
         .footer-copyright {
             text-align: center;
             color: var(--text-muted);
@@ -112,16 +125,19 @@
             font-size: 15px;
             letter-spacing: 0.5px;
         }
+
         @media (max-width: 800px) {
             .footer-container {
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 24px;
             }
+
             .footer-brand {
                 margin-bottom: 8px;
             }
         }
+
         * {
             margin: 0;
             padding: 0;
@@ -395,7 +411,7 @@
             text-shadow: 0 8px 40px #1a237e99, 0 2px 10px var(--shadow-color);
             animation: slideUp 1s ease-out;
             background: none;
-           
+
             color: whitesmoke;
             -webkit-background-clip: initial;
             -webkit-text-fill-color: initial;
@@ -1463,7 +1479,7 @@
                 <a href="#" class="nav-item" onclick="showTab('my-applications')">My Applications</a>
                 <button class="nav-item add-opportunity-btn"
                     style="margin-left:16px;padding:8px 16px;border-radius:8px;background:var(--accent-primary);color:#fff;border:none;cursor:pointer;"
-                    onclick="openAddOpportunityModal()">Add Opportunity</button>
+                    onclick="openAddOpportunityModal()">Login / Sign up</button>
             </nav>
         </div>
     </header>
@@ -1507,19 +1523,30 @@
     </footer>
 
     <!-- Stats Section -->
-    <section class="stats-section" style="width:100%;background:var(--bg-secondary);backdrop-filter:blur(10px);padding:48px 0 32px 0;display:flex;justify-content:center;align-items:center;">
-        <div class="stats-container" style="display:flex;gap:48px;flex-wrap:wrap;justify-content:center;max-width:1100px;width:100%;">
-            <div class="stat-card" style="background:var(--bg-tertiary);border-radius:18px;padding:32px 40px;min-width:220px;box-shadow:0 4px 24px var(--shadow-color);text-align:center;">
-                <div class="stat-value" style="font-size:44px;font-weight:800;color:var(--accent-primary);margin-bottom:8px;">2,350+</div>
-                <div class="stat-label" style="font-size:18px;color:var(--text-primary);font-weight:600;">Participants</div>
+    <section class="stats-section"
+        style="width:100%;background:var(--bg-secondary);backdrop-filter:blur(10px);padding:48px 0 32px 0;display:flex;justify-content:center;align-items:center;">
+        <div class="stats-container"
+            style="display:flex;gap:48px;flex-wrap:wrap;justify-content:center;max-width:1100px;width:100%;">
+            <div class="stat-card"
+                style="background:var(--bg-tertiary);border-radius:18px;padding:32px 40px;min-width:220px;box-shadow:0 4px 24px var(--shadow-color);text-align:center;">
+                <div class="stat-value"
+                    style="font-size:44px;font-weight:800;color:var(--accent-primary);margin-bottom:8px;">2,350+</div>
+                <div class="stat-label" style="font-size:18px;color:var(--text-primary);font-weight:600;">Participants
+                </div>
             </div>
-            <div class="stat-card" style="background:var(--bg-tertiary);border-radius:18px;padding:32px 40px;min-width:220px;box-shadow:0 4px 24px var(--shadow-color);text-align:center;">
-                <div class="stat-value" style="font-size:44px;font-weight:800;color:var(--accent-primary);margin-bottom:8px;">18</div>
-                <div class="stat-label" style="font-size:18px;color:var(--text-primary);font-weight:600;">Opportunities</div>
+            <div class="stat-card"
+                style="background:var(--bg-tertiary);border-radius:18px;padding:32px 40px;min-width:220px;box-shadow:0 4px 24px var(--shadow-color);text-align:center;">
+                <div class="stat-value"
+                    style="font-size:44px;font-weight:800;color:var(--accent-primary);margin-bottom:8px;">18</div>
+                <div class="stat-label" style="font-size:18px;color:var(--text-primary);font-weight:600;">Opportunities
+                </div>
             </div>
-            <div class="stat-card" style="background:var(--bg-tertiary);border-radius:18px;padding:32px 40px;min-width:220px;box-shadow:0 4px 24px var(--shadow-color);text-align:center;">
-                <div class="stat-value" style="font-size:44px;font-weight:800;color:var(--accent-primary);margin-bottom:8px;">7</div>
-                <div class="stat-label" style="font-size:18px;color:var(--text-primary);font-weight:600;">Organizations</div>
+            <div class="stat-card"
+                style="background:var(--bg-tertiary);border-radius:18px;padding:32px 40px;min-width:220px;box-shadow:0 4px 24px var(--shadow-color);text-align:center;">
+                <div class="stat-value"
+                    style="font-size:44px;font-weight:800;color:var(--accent-primary);margin-bottom:8px;">7</div>
+                <div class="stat-label" style="font-size:18px;color:var(--text-primary);font-weight:600;">Organizations
+                </div>
             </div>
         </div>
     </section>
@@ -1699,13 +1726,13 @@
                     <span class="status-badge status-pending">Pending Review</span>
                 </div>
                 <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 8px;">Applied on: March 15, 2024
-                    </p>
-                    <p style="color: rgba(255, 255, 255, 0.7);">Start date: March 25, 2024</p>
-                
-                    <p><strong>Company:</strong> Decathlon Sports</p>
-                    <p><strong>Applied:</strong> 2 days ago</p>
-                    <p><strong>Expected Response:</strong> Within 24 hours</p>
-                    
+                </p>
+                <p style="color: rgba(255, 255, 255, 0.7);">Start date: March 25, 2024</p>
+
+                <p><strong>Company:</strong> Decathlon Sports</p>
+                <p><strong>Applied:</strong> 2 days ago</p>
+                <p><strong>Expected Response:</strong> Within 24 hours</p>
+
             </div>
 
             <div class="application-item">
@@ -1767,7 +1794,7 @@
     </section>
 
     <!-- Footer -->
-   
+
 
     <!-- AI Chatbot -->
     <div class="ai-chatbot">
@@ -1872,4 +1899,576 @@
                 });
             }
         });
-    
+        // Location-based jobs data
+        const jobsData = [
+            {
+                title: 'Sports Equipment Organizer',
+                company: 'Decathlon Sports',
+                duration: 'Apply Now',
+                pay: '₹500/day + meals',
+                location: 'Mumbai',
+                locationKey: 'mumbai',
+                time: '9 AM - 6 PM',
+                Date: ' 25/09/2025',
+
+                email: 'hr.decathlon@sports.com',
+                image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+            },
+            {
+                title: 'Event Setup Assistant',
+                company: 'Reliance Digital',
+                duration: 'Apply Now',
+                pay: '₹600/day',
+                location: 'Pune',
+                locationKey: 'pune',
+                time: '8 AM - 5 PM',
+                Date: ' 25/12/2025',
+                email: 'careers@reliancedigital.com',
+                image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+            },
+            {
+                title: 'Customer Service Helper',
+                company: 'Big Bazaar',
+                duration: 'Apply Now',
+                pay: '₹450/day + transport',
+                location: 'Nagar',
+                locationKey: 'nagar',
+                time: '10 AM - 7 PM',
+                Date: ' 2/11/2025',
+                email: 'volunteer@bigbazaar.in',
+                image: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+            },
+            {
+                title: 'Warehouse Assistant',
+                company: 'Amazon Fulfillment',
+                duration: 'Apply Now',
+                pay: '₹700/day',
+                location: 'Goa',
+                locationKey: 'goa',
+                time: '9 AM - 6 PM',
+                Date: ' 25/10/2025',
+                email: 'temp.jobs@amazon.com',
+                image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+            }
+        ];
+
+        function renderJobs(location) {
+            const grid = document.getElementById('jobsGrid');
+            grid.innerHTML = '';
+            // Always keep grid at full height to prevent layout shift
+            // If you want to auto-adjust, you can set min-height to jobsData.length * card height
+            // But for now, min-height is set in CSS above
+            let filtered = jobsData;
+            if (location && location !== 'all') {
+                filtered = jobsData.filter(job => job.locationKey === location);
+            }
+            if (filtered.length === 0) {
+                grid.innerHTML = '<p style="color:var(--text-secondary);text-align:center;width:100%;">No opportunities found for this location.</p>';
+                return;
+            }
+            filtered.forEach(job => {
+                grid.innerHTML += `
+                <div class="job-card">
+                    <div class="job-image" style="background-image: url('${job.image}')"></div>
+                    <div class="job-content">
+                        <div class="job-header">
+                            <div>
+                                <h3 class="job-title">${job.title}</h3>
+                                <p class="company">${job.company}</p>
+                            </div>
+                            <span class="job-duration">${job.duration}</span>
+                        </div>
+                        <div class="job-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">💰</span>
+                                <span>${job.pay}</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📍</span>
+                                <span>${job.location}</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">⏰</span>
+                                <span>${job.time}</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📅</span>
+                                <span>${job.Date}</span>
+                            </div>
+                        </div>
+                        <div class="contact-info">
+                            <div class="detail-item">
+                                <span class="detail-icon">📧</span>
+                                <span>${job.email}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                `;
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const locationSelect = document.getElementById('locationSelect');
+            renderJobs('all');
+            locationSelect.addEventListener('change', function () {
+                renderJobs(this.value);
+            });
+        });
+        // Theme Management
+        function toggleTheme() {
+            const body = document.body;
+            const toggle = document.querySelector('.toggle-switch');
+            const currentTheme = body.getAttribute('data-theme');
+
+            if (currentTheme === 'dark') {
+                body.setAttribute('data-theme', 'light');
+                toggle.classList.add('light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                toggle.classList.remove('light');
+            }
+        }
+
+        // Tab Management
+        function showTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Remove active class from all tab buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Show selected tab
+            document.getElementById(tabName).classList.add('active');
+
+            // Add active class to clicked button
+            document.querySelector(`[data-tab="${tabName}"]`).classList.add('active');
+
+            // Update nav items
+            document.querySelectorAll('.nav-item').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // Add active to corresponding nav item
+            if (tabName === 'browse') {
+                document.querySelector('.nav-item[onclick="showTab(\'browse\')"]').classList.add('active');
+            } else if (tabName === 'apply') {
+                document.querySelector('.nav-item[onclick="showTab(\'apply\')"]').classList.add('active');
+            } else if (tabName === 'my-applications') {
+                document.querySelector('.nav-item[onclick="showTab(\'my-applications\')"]').classList.add('active');
+            }
+        }
+
+        // Form Management
+        document.getElementById('application-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Show success message
+            document.getElementById('success-message').style.display = 'flex';
+
+            // Reset form
+            this.reset();
+
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                document.getElementById('success-message').style.display = 'none';
+            }, 5000);
+        });
+
+        // AI Chatbot Functionality
+        let chatOpen = false;
+        let conversationHistory = [];
+
+        // AI Bot responses database
+        const botResponses = {
+            greetings: [
+                "Hello! I'm here to help you with your volunteering journey. What would you like to know?",
+                "Hi there! Ready to make a difference? I can guide you through our volunteer opportunities!",
+                "Welcome! I'm your volunteer assistant. How can I help you find the perfect opportunity?"
+            ],
+            opportunities: {
+                "show me available opportunities": "Here are our current volunteer opportunities:\n\n🏃‍♂️ **Sports Equipment Organizer** - Decathlon Sports (3 days, ₹500/day)\n🎪 **Event Setup Assistant** - Reliance Digital (1 day, ₹600/day)\n🛒 **Customer Service Helper** - Big Bazaar (3 days, ₹450/day)\n📦 **Warehouse Assistant** - Amazon (1 week, ₹700/day)\n\nWould you like more details about any of these positions?",
+                "find opportunities": "I can help you find the perfect volunteer opportunity! What type of work interests you most?\n\n• Physical/Active work (sports, events, warehouse)\n• Customer interaction (retail, service)\n• Short-term (1-3 days) or longer commitment (1 week+)\n• Specific location preference?\n\nTell me your preferences and I'll recommend the best matches!",
+                "opportunities near me": "Based on your location, here are nearby opportunities:\n\n📍 **Mumbai**: Sports Equipment Organizer at Decathlon\n📍 **Pune**: Event Setup Assistant at Reliance Digital\n📍 **Delhi NCR**: Customer Service Helper at Big Bazaar\n📍 **Bangalore**: Warehouse Assistant at Amazon\n\nWhich city are you interested in?"
+            },
+            application: {
+                "how do i apply": "Applying is easy! Here's the step-by-step process:\n\n1️⃣ **Browse Opportunities** - Check the 'Browse opportunities' tab\n2️⃣ **Choose Position** - Select one that matches your interests\n3️⃣ **Fill Application** - Go to 'Apply' tab and complete the form\n4️⃣ **Submit Documents** - Provide required information\n5️⃣ **Wait for Response** - We'll contact you within 24-48 hours\n\nNeed help with any specific step?",
+                "application process": "The application process is designed to be simple:\n\n✅ **Quick Form** - Basic info, experience, availability\n✅ **No Complex Documents** - Just tell us about yourself\n✅ **Fast Response** - Most applications reviewed within 24 hours\n✅ **Direct Contact** - Organizations contact you directly\n\nWould you like me to guide you to the application form?",
+                "how to apply for": "Great choice! To apply for a volunteer position:\n\n1. Click on the 'Apply' tab above\n2. Fill in your personal details\n3. Select the position you're interested in\n4. Share your relevant experience\n5. Mention your availability\n6. Submit the form\n\nI can walk you through each step if needed!"
+            },
+            requirements: {
+                "what documents do i need": "Good news! We keep requirements simple:\n\n📋 **Required**:\n• Valid phone number\n• Email address\n• Basic personal information\n\n📋 **Helpful (but not required)**:\n• Previous volunteer experience\n• Relevant skills or interests\n• Preferred working hours\n\nNo complex paperwork needed - we believe in making volunteering accessible!",
+                "requirements": "Here are the general requirements for volunteering:\n\n✅ **Age**: 18+ (some positions may accept 16+ with guardian consent)\n✅ **Availability**: Match the position's schedule\n✅ **Attitude**: Positive and willing to help\n✅ **Communication**: Basic English/local language\n✅ **Reliability**: Commitment to show up as scheduled\n\nMost positions provide training, so don't worry if you're new to volunteering!"
+            },
+            tips: {
+                "tips for volunteering success": "Here are my top tips for successful volunteering:\n\n🌟 **Be Punctual** - Arrive on time, organizations depend on you\n🌟 **Stay Positive** - Your attitude affects everyone around you\n🌟 **Ask Questions** - Don't hesitate to seek clarification\n🌟 **Be Flexible** - Volunteer work can be unpredictable\n🌟 **Network** - Build connections with fellow volunteers\n🌟 **Learn** - Every experience teaches something new\n🌟 **Follow Up** - Thank organizers and ask for feedback\n\nRemember: You're making a real difference! 💪",
+                "tips": "Quick volunteering tips:\n\n💡 **Start Small** - Choose shorter commitments initially\n💡 **Match Skills** - Pick roles that use your strengths\n💡 **Dress Appropriately** - Follow the organization's dress code\n💡 **Bring Water** - Stay hydrated during physical work\n💡 **Be Patient** - Learning takes time\n💡 **Stay Connected** - Keep in touch for future opportunities\n\nWhat specific area would you like tips about?"
+            },
+            locations: {
+                "mumbai": "Great! Mumbai has excellent volunteer opportunities:\n\n🏃‍♂️ **Decathlon Sports** - Sports Equipment Organizer\n📍 Location: Mumbai, Maharashtra\n⏰ Hours: 9 AM - 6 PM\n💰 Pay: ₹500/day + meals \n gfytgygyf\n 📞 Contact: hr.decathlon@sports.com\n\nThis is perfect if you enjoy sports and organizing! Would you like to apply?",
+                "pune": "Pune has a fantastic opportunity right now:\n\n🎪 **Reliance Digital** - Event Setup Assistant\n📍 Location: Pune, Maharashtra\n⏰ Hours: 8 AM - 5 PM\n💰 Pay: ₹600/day\n📞 Contact: careers@reliancedigital.com\n\nIt's just one day and pays well! Interested in learning more?",
+                "delhi": "Delhi NCR has a great customer service opportunity:\n\n🛒 **Big Bazaar** - Customer Service Helper\n📍 Location: Delhi NCR\n⏰ Hours: 10 AM - 7 PM\n💰 Pay: ₹450/day + transport\n📞 Contact: volunteer@bigbazaar.in\n\nPerfect if you enjoy helping people! Want to apply?",
+                "bangalore": "Bangalore has our longest-term opportunity:\n\n📦 **Amazon Fulfillment** - Warehouse Assistant\n📍 Location: Bangalore, Karnataka\n⏰ Hours: 9 AM - 6 PM\n💰 Pay: ₹700/day\n📞 Contact: temp.jobs@amazon.com\n\nIt's a full week commitment but excellent pay! Interested?"
+            },
+            general: {
+                "help": "I'm here to help with anything related to volunteering! I can assist with:\n\n🔍 **Finding Opportunities** - Browse available positions\n📝 **Application Help** - Guide you through the process\n📄 **Requirements Info** - What you need to get started\n💡 **Success Tips** - Make your volunteering impactful\n📍 **Location Details** - Find opportunities near you\n⏰ **Schedule Questions** - Time commitments and flexibility\n\nWhat would you like to know more about?",
+                "thank you": "You're very welcome! I'm so glad I could help. Remember, volunteering is a wonderful way to make a difference while gaining valuable experience.\n\nIs there anything else you'd like to know about volunteering opportunities? I'm here whenever you need guidance! 😊",
+                "bye": "Goodbye! Thanks for considering volunteering with us. Remember, every small act of service makes a big difference.\n\nFeel free to come back anytime if you have questions. Good luck with your volunteering journey! 🌟"
+            }
+        };
+
+        // Initialize chatbot
+        function initializeChatbot() {
+            // Show welcome popup after 3 seconds for new users
+            setTimeout(() => {
+                if (!localStorage.getItem('chatbot_welcomed')) {
+                    showWelcomePopup();
+                    showNotification();
+                }
+            }, 3000);
+
+            // Auto-resize chat input
+            const chatInput = document.getElementById('chatInput');
+            if (chatInput) {
+                chatInput.addEventListener('input', autoResizeTextarea);
+                chatInput.addEventListener('keypress', handleEnterKey);
+            }
+        }
+
+        function showWelcomePopup() {
+            const popup = document.getElementById('welcomePopup');
+            if (popup) {
+                popup.classList.add('show');
+            }
+        }
+
+        function hideWelcomePopup() {
+            const popup = document.getElementById('welcomePopup');
+            if (popup) {
+                popup.classList.remove('show');
+                localStorage.setItem('chatbot_welcomed', 'true');
+                hideNotification();
+            }
+        }
+
+        function showNotification() {
+            const badge = document.getElementById('notificationBadge');
+            if (badge) {
+                badge.style.display = 'flex';
+            }
+        }
+
+        function hideNotification() {
+            const badge = document.getElementById('notificationBadge');
+            if (badge) {
+                badge.style.display = 'none';
+            }
+        }
+
+        function startChat() {
+            hideWelcomePopup();
+            toggleChat();
+        }
+
+        function toggleChat() {
+            const chatWindow = document.getElementById('chatWindow');
+            const triggerIcon = document.getElementById('triggerIcon');
+            const chatTrigger = document.getElementById('chatTrigger');
+
+            if (!chatWindow || !triggerIcon || !chatTrigger) return;
+
+            chatOpen = !chatOpen;
+
+            if (chatOpen) {
+                chatWindow.classList.add('active');
+                triggerIcon.textContent = '×';
+                chatTrigger.classList.add('active');
+                hideNotification();
+
+                // Focus on input when chat opens
+                setTimeout(() => {
+                    const input = document.getElementById('chatInput');
+                    if (input) input.focus();
+                }, 300);
+            } else {
+                chatWindow.classList.remove('active');
+                triggerIcon.textContent = '👨🏼‍🚀';
+                chatTrigger.classList.remove('active');
+            }
+        }
+
+        function sendMessage() {
+            const input = document.getElementById('chatInput');
+            if (!input) return;
+
+            const message = input.value.trim();
+
+            if (message) {
+                addUserMessage(message);
+                input.value = '';
+                autoResizeTextarea.call(input);
+
+                // Show typing indicator
+                showTypingIndicator();
+
+                // Generate bot response
+                setTimeout(() => {
+                    hideTypingIndicator();
+                    const response = generateBotResponse(message);
+                    addBotMessage(response);
+                }, 1000 + Math.random() * 1000); // Random delay for realism
+            }
+        }
+
+        function sendQuickMessage(message) {
+            addUserMessage(message);
+
+            setTimeout(() => {
+                const response = generateBotResponse(message);
+                addBotMessage(response);
+            }, 500);
+        }
+
+        function addUserMessage(message) {
+            const messagesContainer = document.getElementById('chatMessages');
+            if (!messagesContainer) return;
+
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message user';
+
+            messageDiv.innerHTML = `
+                <div class="message-avatar">👤</div>
+                <div class="message-content">${escapeHtml(message)}</div>
+            `;
+
+            messagesContainer.appendChild(messageDiv);
+            scrollToBottom();
+
+            // Store in conversation history
+            conversationHistory.push({ type: 'user', message: message });
+        }
+
+        function addBotMessage(message) {
+            const messagesContainer = document.getElementById('chatMessages');
+            if (!messagesContainer) return;
+
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message bot';
+
+            messageDiv.innerHTML = `
+                <div class="message-avatar">🤖</div>
+                <div class="message-content">${formatBotMessage(message)}</div>
+            `;
+
+            messagesContainer.appendChild(messageDiv);
+            scrollToBottom();
+
+            // Store in conversation history
+            conversationHistory.push({ type: 'bot', message: message });
+        }
+
+        function showTypingIndicator() {
+            const messagesContainer = document.getElementById('chatMessages');
+            if (!messagesContainer) return;
+
+            const typingDiv = document.createElement('div');
+            typingDiv.className = 'message bot typing-indicator-wrapper';
+            typingDiv.id = 'typingIndicator';
+
+            typingDiv.innerHTML = `
+                <div class="message-avatar">🤖</div>
+                <div class="message-content">
+                    <div class="typing-indicator">
+                        <div class="typing-dot"></div>
+                        <div class="typing-dot"></div>
+                        <div class="typing-dot"></div>
+                    </div>
+                </div>
+            `;
+
+            messagesContainer.appendChild(typingDiv);
+            scrollToBottom();
+        }
+
+        function hideTypingIndicator() {
+            const typingIndicator = document.getElementById('typingIndicator');
+            if (typingIndicator) {
+                typingIndicator.remove();
+            }
+        }
+
+        function generateBotResponse(userMessage) {
+            const message = userMessage.toLowerCase();
+
+            // Check for greetings
+            if (message.includes('hello') || message.includes('hi') || message.includes('hey')) {
+                return getRandomResponse(botResponses.greetings);
+            }
+
+            // Check for opportunities
+            if (message.includes('opportunities') || message.includes('jobs') || message.includes('find') || message.includes('available')) {
+                if (message.includes('show me available opportunities')) {
+                    return botResponses.opportunities["show me available opportunities"];
+                } else if (message.includes('near me') || message.includes('location')) {
+                    return botResponses.opportunities["opportunities near me"];
+                } else {
+                    return botResponses.opportunities["find opportunities"];
+                }
+            }
+
+            // Check for application help
+            if (message.includes('apply') || message.includes('application')) {
+                if (message.includes('how do i apply') || message.includes('how to apply')) {
+                    return botResponses.application["how do i apply"];
+                } else if (message.includes('process')) {
+                    return botResponses.application["application process"];
+                } else {
+                    return botResponses.application["how to apply for"];
+                }
+            }
+
+            // Check for requirements
+            if (message.includes('documents') || message.includes('requirements') || message.includes('need')) {
+                if (message.includes('documents')) {
+                    return botResponses.requirements["what documents do i need"];
+                } else {
+                    return botResponses.requirements["requirements"];
+                }
+            }
+
+            // Check for tips
+            if (message.includes('tips') || message.includes('advice') || message.includes('success')) {
+                if (message.includes('success')) {
+                    return botResponses.tips["tips for volunteering success"];
+                } else {
+                    return botResponses.tips["tips"];
+                }
+            }
+
+            // Check for locations
+            if (message.includes('mumbai')) {
+                return botResponses.locations["mumbai"];
+            }
+            if (message.includes('pune')) {
+                return botResponses.locations["pune"];
+            }
+            if (message.includes('delhi')) {
+                return botResponses.locations["delhi"];
+            }
+            if (message.includes('bangalore') || message.includes('bengaluru')) {
+                return botResponses.locations["bangalore"];
+            }
+
+            // Check for general responses
+            if (message.includes('help')) {
+                return botResponses.general["help"];
+            }
+            if (message.includes('thank')) {
+                return botResponses.general["thank you"];
+            }
+            if (message.includes('bye') || message.includes('goodbye')) {
+                return botResponses.general["bye"];
+            }
+
+            // Default response for unrecognized input
+            return "I'd be happy to help you with that! Here are some things I can assist with:\n\n🔍 **Find Opportunities** - Browse available volunteer positions\n📝 **Application Guidance** - Step-by-step help\n📄 **Requirements** - What you need to get started\n💡 **Tips** - Success strategies for volunteering\n📍 **Locations** - Find opportunities near you\n\nWhat specific information would you like?";
+        }
+
+        function getRandomResponse(responses) {
+            return responses[Math.floor(Math.random() * responses.length)];
+        }
+
+        function scrollToBottom() {
+            const messagesContainer = document.getElementById('chatMessages');
+            if (messagesContainer) {
+                messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            }
+        }
+
+        function autoResizeTextarea() {
+            this.style.height = 'auto';
+            this.style.height = Math.min(this.scrollHeight, 100) + 'px';
+        }
+
+        function handleEnterKey(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function formatBotMessage(message) {
+            // Convert markdown-style formatting to HTML
+            let formatted = escapeHtml(message);
+
+            // Bold text
+            formatted = formatted.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+
+            // Line breaks
+            formatted = formatted.replace(/\n/g, '<br>');
+
+            return formatted;
+        }
+
+        // Initialize everything when the page loads
+        document.addEventListener('DOMContentLoaded', function () {
+            initializeChatbot();
+        });
+
+        // Close welcome popup when clicking outside
+        document.addEventListener('click', function (e) {
+            const popup = document.getElementById('welcomePopup');
+            if (popup && popup.classList.contains('show') && !popup.contains(e.target) && !e.target.closest('.chat-trigger')) {
+                hideWelcomePopup();
+            }
+        });
+
+    </script>
+</body>
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <span>GetOpps</span>
+            <span>Empowering Volunteers</span>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#">Opportunities</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="footer-social">
+            <a href="#" aria-label="Instagram"><svg width="22" height="22" fill="none" viewBox="0 0 24 24">
+                    <rect width="18" height="18" x="3" y="3" rx="5" stroke="currentColor" stroke-width="2" />
+                    <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" />
+                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+                </svg></a>
+            <a href="#" aria-label="Twitter"><svg width="22" height="22" fill="none" viewBox="0 0 24 24">
+                    <path
+                        d="M22 5.924c-.793.352-1.645.59-2.54.698a4.48 4.48 0 0 0 1.963-2.475 8.94 8.94 0 0 1-2.828 1.082A4.48 4.48 0 0 0 12 9.482c0 .352.04.695.116 1.022C8.728 10.36 5.768 8.7 3.743 6.149a4.48 4.48 0 0 0-.607 2.255c0 1.555.792 2.927 2.002 3.732a4.48 4.48 0 0 1-2.03-.561v.057a4.48 4.48 0 0 0 3.6 4.393 4.48 4.48 0 0 1-2.025.077 4.48 4.48 0 0 0 4.18 3.11A8.98 8.98 0 0 1 2 19.07a12.68 12.68 0 0 0 6.88 2.017c8.26 0 12.78-6.84 12.78-12.77 0-.195-.004-.39-.013-.583A9.14 9.14 0 0 0 24 4.59a8.98 8.98 0 0 1-2.6.713Z"
+                        stroke="currentColor" stroke-width="2" />
+                </svg></a>
+            <a href="#" aria-label="LinkedIn"><svg width="22" height="22" fill="none" viewBox="0 0 24 24">
+                    <rect width="18" height="18" x="3" y="3" rx="4" stroke="currentColor" stroke-width="2" />
+                    <path d="M8 11v5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    <circle cx="8" cy="8" r="1" fill="currentColor" />
+                    <path d="M12 14v-1.5a2 2 0 0 1 4 0V14" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg></a>
+        </div>
+    </div>
+    <div class="footer-copyright">&copy; 2025 GetOpps. All rights reserved.</div>
+</footer>
+
+</html>
