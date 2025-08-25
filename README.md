@@ -63,4 +63,11 @@ Member 3 – Karan Sathe
 
 Member 4 – Mayank Kumar
 
-member 5 - Sujal Dubey
+Member 5 - Sujal Dubey
+
+]
+
+🌐 Live Demo
+
+🔗 Hosted Website Link : https://swarajsinghofficial.github.io/Code-Oracles-GetOpps/
+
